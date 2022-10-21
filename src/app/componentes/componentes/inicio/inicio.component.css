@@ -1,0 +1,101 @@
+.container
+{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.titular
+{
+    width: 70%;
+    height: auto;
+}
+
+.titular
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo
+{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica, 'arial narrow';
+    font-weight:lighter;
+    font-size: 5ex;
+    color: white;
+    border-bottom: 5px solid var(--eblue);
+    transition: all 0.6s;
+}
+.titulo:hover
+{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Helvetica, 'arial narrow';
+    font-weight:lighter;
+    font-size: 5ex;
+    color: white;
+    border-bottom: 5px solid var(--eblue);
+    transition: all 0.6s;
+}
+
+/*CONTENEDOR DE TRAJETAS*/
+.cardsContainer
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+ /**Quitar decoración de los links**/
+.decoration
+{
+    text-decoration: none;
+    padding: 1%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+/**animación del card**/
+.card:hover
+{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    transition: all 1s;
+    border: 2px solid var(--epink);
+}
+/**centrar objetos del card**/
+.center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    margin: 2em auto 2em auto;
+    position: relative;
+    max-width: 900px;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item {
+    width: 32%;
+    padding-bottom: 0%;
+    margin-bottom: 5%;
+  }

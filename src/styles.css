@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+:root
+{
+    --eblack: rgb(0, 0, 0);
+    --epink:rgba(224, 36, 154);
+    --egray: rgba(102,102,102);
+    --eblue: rgba(61,203,255);
+    --epurple: rgb(253, 179, 199);
+}
+
+.texto
+{
+    font-family: 'HGGothicE';
+}
+
+.fondo
+{
+    background-color: var(--eblack);
+}

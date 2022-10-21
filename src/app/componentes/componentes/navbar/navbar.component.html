@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg black">
+    <div class="container-fluid">
+      <!--LOGO-->
+      <div style="width: 15%">
+        <a class="navbar-brand" [routerLink]="['/Inicio']">
+          <img src="../../../../assets/imagenes/logo3.png" alt="" class="logo">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--Item de Noticias-->
+          <li class="nav-item">
+            <a class="nav-link white" [routerLink]="['/Inicio']" >
+              <i class="fa-regular fa-newspaper"></i>
+              NOTICIAS
+            </a>
+          </li>
+          <!--Item de Escucha-->
+          <li class="nav-item">
+            <a class="nav-link white" [routerLink]="['/Escucha']">
+              <i class="fa-solid fa-headphones-simple"></i>
+              ESCUCHA
+            </a>
+          </li>
+          <!--Item de Contacto-->
+          <li class="nav-item">
+            <a class="nav-link white" href="#">
+              <i class="fa-solid fa-phone"></i>
+              CONTACTO
+            </a>
+          </li>
+          <!--Item de Más-->
+          <li class="nav-item">
+            <a class="nav-link white" href="#">
+              <i class="fa-solid fa-bolt"></i>
+              MÁS
+            </a>
+          </li>
+        </ul>
+        <!--Busqueda-->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success whitebg" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>

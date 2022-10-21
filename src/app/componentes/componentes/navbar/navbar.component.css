@@ -1,0 +1,35 @@
+/*color de texto a blanco*/
+.white
+{
+    color: white;
+}
+.white:hover
+{
+    color: var(--eblue);
+    transition: all 0.8s;
+}
+
+
+.logo
+{
+    width: 100%;
+    height: auto;
+}
+
+.whitebg
+{
+    border: 1px solid white;
+    color: white;
+}
+.whitebg:hover
+{
+    border: 1px solid var(--epink);
+    background-color: var(--eblack);
+    color: var(--epink);
+    transition: all 0.8s;
+}
+
+.black
+{
+    background-color: var(--eblack);
+}

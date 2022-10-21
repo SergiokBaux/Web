@@ -1,0 +1,36 @@
+.fondo
+{
+    width: 100%;
+    height: auto;
+    background-color:  var(--egray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cara
+{
+    width: 30%;
+}
+.ooops
+{
+    width: 20%;
+    height: auto;
+
+}
+.imagen
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.texto
+{
+    font-family: 'Helvetica','Arial narrow';
+    text-anchor: middle;
+    justify-content: center;
+    color: white;
+}
