@@ -16,9 +16,22 @@ export class EscuchaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.Bandassvc.getAllBandas().subscribe((result:any)=>{
-      this.bandasList=result;
-    console.log("result")})
+    this.muestraBandas();
   }
-
+muestraBandas()
+{
+  this.Bandassvc.getAllBandas().subscribe((result:any)=>{
+    this.bandasList=result;
+  console.log("result")})
+}
+  eliminarBanda(IDBanda:number)
+    {
+        this.Bandassvc.delete(IDBanda).subscribe((datos:any)=>{
+            if(datos['resultado'] === 'OK')
+            {
+                alert(datos['mensaje']);
+                this.muestraBandas();
+            }
+        })
+    }
 }

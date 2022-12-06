@@ -1,0 +1,74 @@
+
+  <section class="background">
+    <form class="form" [formGroup]="BandaForm">
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <i class="fa-solid fa-headphones-simple icon"></i>
+        </div>
+    <!--AGREGA TU BANDA-->
+      <div class="titular">
+        <div class="titulo">#Agrega tu banda</div>
+      </div>
+      <br>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1" class="white">Nombre</label>
+          <input type="text" class="form-control" id="TextBoxNombreBanda" placeholder="Nombre de tu banda" formControlName="NombreBanda">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1" class="white">Estado</label>
+          <select class="form-control" id="FormControlEstado" formControlName="Estado">
+            <option>AGU</option>
+            <option>BCN</option>
+            <option>BCS</option>
+            <option>CAM</option>
+            <option>CHP</option>
+            <option>CHH</option>
+            <option>CMX</option>
+            <option>COA</option>
+            <option>COL</option>
+            <option>DUR</option>
+            <option>GUA</option>
+            <option>GRO</option>
+            <option>HID</option>
+            <option>JAL</option>
+            <option>MEX</option>
+            <option>MIC</option>
+            <option>MOR</option>
+            <option>NAY</option>
+            <option>NLE</option>
+            <option>OAX</option>
+            <option>PUE</option>
+            <option>QUE</option>
+            <option>ROO</option>
+            <option>SLP</option>
+            <option>SIN</option>
+            <option>SON</option>
+            <option>TAB</option>
+            <option>TAM</option>
+            <option>TLA</option>
+            <option>VER</option>
+            <option>YUC</option>
+            <option>ZAC</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="start" class="white">Inicio de la banda:</label>
+            <br>
+            <input type="date" id="date" name="trip-start" value="2022-11-01" min="1990-01-01" max="2023-12-31" formControlName="Fecha">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="exampleFormControlInput1" class="white">Link</label>
+            <input type="text" class="form-control" id="TextBoxLink" placeholder="Inserta el link de una canción de tu banda" formControlName="link">
+          </div>
+
+          <br>
+          <br>
+          <button type="button" class="btn boton" (click)="AltaBanda()">Enviar</button>
+
+      </form>
+    </section>
+
+

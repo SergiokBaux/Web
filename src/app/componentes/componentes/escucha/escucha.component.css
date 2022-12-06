@@ -1,0 +1,39 @@
+.boton
+{
+    padding: 1% 5% 1% 5% ;
+    border: 1px solid var(--epink);
+    color: var(--epink);
+}
+
+.boton:hover
+{
+    border: 1px solid var(--epink);
+    background-color: var(--epink);
+    color: black;
+    transition: all 0.6s;
+}
+
+.boton2
+{
+    padding: 1% 5% 1% 5% ;
+    border: 1px solid var(--eblue);
+    color: var(--eblue);
+}
+
+.boton2:hover
+{
+    border: 1px solid var(--eblue);
+    background-color: var(--eblue);
+    color: black;
+    transition: all 0.6s;
+}
+
+.botones
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 5%;
+    
+}

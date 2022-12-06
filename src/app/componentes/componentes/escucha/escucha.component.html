@@ -1,19 +1,29 @@
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Banda</th>
-            <th scope="col">Ciudad</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Link</th>
-          </tr>
-    </thead>
-    <tbody *ngFor="let item of bandasList">
-      <tr>
-        <th scope="row">{{item.Banda}}</th>
-        <td>{{item.Ciudad}}</td>
-        <td>{{item.Fecha}}</td>
-        <td><a href={{item.link}}>{{item.link}}</a></td>
-      </tr>
+<section class="background">
+  
+  <div class="botones">
+    <a [routerLink]="['/AgregaBanda']">  <button type="button" class="btn boton" onclick="">Añadir</button>  </a>
+    <a [routerLink]="['/AgregaBanda']">  <button type="button" class="btn boton2" onclick="">Eliminar</button>  </a>
 
-    </tbody>
-  </table>
+  </div>
+
+    <table class="table">
+      <thead>
+          <tr>
+              <th scope="col">Banda</th>
+              <th scope="col">Ciudad</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Link</th>
+            </tr>
+      </thead>
+      <tbody *ngFor="let item of bandasList">
+        <tr>
+          <th scope="row">{{item.NombreBanda}}</th>
+          <td>{{item.Ciudad}}</td>
+          <td>{{item.Fecha}}</td>
+          <td><a href={{item.Link}}>{{item.Link}}</a></td>
+          <td><button (click)="eliminarBanda(item.IDBanda)">Eliminar</button></td>
+        </tr>
+  
+      </tbody>
+    </table>
+</section>

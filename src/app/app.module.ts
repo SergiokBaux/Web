@@ -10,6 +10,9 @@ import { InicioComponent } from './componentes/componentes/inicio/inicio.compone
 import { PageNotFoundComponent } from './componentes/componentes/page-not-found/page-not-found.component';
 import { FooterComponent } from './componentes/componentes/footer/footer.component';
 import { EscuchaComponent } from './componentes/componentes/escucha/escucha.component';
+import { ContactoComponent } from './componentes/componentes/contacto/contacto.component';
+import { AgregaBandaComponent } from './componentes/componentes/agrega-banda/agrega-banda.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -19,12 +22,16 @@ import { EscuchaComponent } from './componentes/componentes/escucha/escucha.comp
     InicioComponent,
     PageNotFoundComponent,
     FooterComponent,
-    EscuchaComponent
+    EscuchaComponent,
+    ContactoComponent,
+    AgregaBandaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
