@@ -10,14 +10,24 @@ export class InicioComponent implements OnInit {
 
   notasList: any []=[];
 
-  constructor( private Notassvc:NotasService){
+  constructor( private Bandassvc:NotasService){
 
   }
 
   ngOnInit(): void {
-    this.Notassvc.getAll().subscribe((result:any)=>{
+    this.muestraNotas();
+  }
+
+  muestraNotas()
+  {
+    this.Bandassvc.getAll().subscribe((result:any)=>{
       this.notasList=result;
     console.log("result")})
   }
-
+  eliminarNota(IDNota:number)
+    {
+        this.Bandassvc.deleteNota(IDNota).subscribe((datos:any)=>{
+          this.muestraNotas();
+        })
+    }
 }

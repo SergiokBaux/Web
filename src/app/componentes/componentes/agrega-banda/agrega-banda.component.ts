@@ -13,9 +13,9 @@ export class AgregaBandaComponent {
 
   BandaForm =  new FormGroup({
     NombreBanda: new FormControl(''),
-    Estado: new FormControl(''),
+    Ciudad: new FormControl(''),
     Fecha: new FormControl(''),
-    link: new FormControl(''),
+    Link: new FormControl(''),
   });
 
   constructor( private Bandassvc:NotasService){
@@ -27,6 +27,7 @@ export class AgregaBandaComponent {
 
   AltaBanda(): void
   {
+    console.log(this.BandaForm.value);
     this.Bandassvc.post(this.BandaForm.value).subscribe(()=>{
       this.BandaForm.reset("");
     })

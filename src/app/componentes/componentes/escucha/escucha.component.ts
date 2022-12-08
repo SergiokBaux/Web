@@ -27,11 +27,7 @@ muestraBandas()
   eliminarBanda(IDBanda:number)
     {
         this.Bandassvc.delete(IDBanda).subscribe((datos:any)=>{
-            if(datos['resultado'] === 'OK')
-            {
-                alert(datos['mensaje']);
-                this.muestraBandas();
-            }
+          this.muestraBandas();
         })
     }
 }

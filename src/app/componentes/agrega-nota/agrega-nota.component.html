@@ -1,0 +1,35 @@
+
+  <section class="background">
+    <form class="form" [formGroup]="NotaForm">
+        <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+            <i class="fa-solid fa-headphones-simple icon"></i>
+        </div>
+    <!--AGREGA TU BANDA-->
+      <div class="titular">
+        <div class="titulo">#Agrega tu Nota</div>
+      </div>
+      <br>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1" class="white">Nombre</label>
+          <input type="text" class="form-control" id="TextBoxTitulo" placeholder="Titulo de la nota" formControlName="Titulo">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+            <label for="exampleFormControlInput1" class="white">Autor</label>
+            <input type="text" class="form-control" id="TextBoxLink" placeholder="Autor de la nota" formControlName="Autor">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1" class="white">Nota</label>
+            <input type="text" class="form-control" id="TextBoxLink" placeholder="Escribe tu nota" formControlName="Nota">
+        </div>
+
+          <br>
+          <br>
+          <button type="button" class="btn boton" (click)="AltaNota()">Enviar</button>
+
+      </form>
+    </section>
+
+

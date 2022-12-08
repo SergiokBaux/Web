@@ -36,17 +36,17 @@
       <div class="titulo">#ARTICULOS</div>
     </div>
 
-
+    <a class="nav-link white" [routerLink]="['/AgregaNota']" > <div>Nueva Nota</div></a>
 
       <div class="container2">
       <div class="item cardsContainer" *ngFor="let item of notasList">
         <!--Card de The Wonder Years-->
         <a href="#" class="decoration">
           <div class="card" style="width: 18rem; margin: 2%;">
-            <img src="../../../../assets/imagenes/{{item.ID}}.webp" class="card-img-top" alt="...">
             <div class="card-body center">
-              <h5 class="card-title">{{item.titulo}}</h5>
-              <p class="card-text">{{item.autor}}</p>
+              <h5 class="card-title">{{item.Titulo}}</h5>
+              <p class="card-text">{{item.Autor}}</p>
+              <td><button (click)="eliminarNota(item.IDNota)">Eliminar</button></td>
             </div>
           </div>
         </a>

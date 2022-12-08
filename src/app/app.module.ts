@@ -12,7 +12,8 @@ import { FooterComponent } from './componentes/componentes/footer/footer.compone
 import { EscuchaComponent } from './componentes/componentes/escucha/escucha.component';
 import { ContactoComponent } from './componentes/componentes/contacto/contacto.component';
 import { AgregaBandaComponent } from './componentes/componentes/agrega-banda/agrega-banda.component';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AgregaNotaComponent } from './componentes/agrega-nota/agrega-nota.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms'
     FooterComponent,
     EscuchaComponent,
     ContactoComponent,
-    AgregaBandaComponent
+    AgregaBandaComponent,
+    AgregaNotaComponent
   ],
   imports: [
     BrowserModule,
